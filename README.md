@@ -1,2 +1,2 @@
-# CapBookingSystem
-The Java Based Cap Booking System Application
+# CabBookingSystem
+The Java Based Cab Booking System Application
