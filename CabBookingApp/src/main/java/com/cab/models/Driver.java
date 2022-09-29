@@ -24,9 +24,7 @@ public class Driver extends BasicDetails {
 	private Integer driverId;
 	
 	@OneToOne(cascade = CascadeType.ALL)
-	
 	@JoinColumn(name = "cabId")
-	
 	@JsonIgnore
 	private Cab cab;
 	
@@ -39,6 +37,8 @@ public class Driver extends BasicDetails {
 	private String licenseNumber;
 	
 	private Boolean availablity = true;
+	
+	private Float rating;
 	
 	/*Getter Setter Methods Start*/
 
@@ -80,12 +80,25 @@ public class Driver extends BasicDetails {
 
 	public void setAvailablity(Boolean availablity) {
 		this.availablity = availablity;
+		
 	}
+	public Float getRating() {
+		return rating;
+	}
+
+	public void setRating(Float rating) {
+		this.rating = rating;
+	}
+	
+	
 	
 	/*Getter Setter Methods Ended*/
 	
 	
 	/*override method*/
+
+	
+	
 
 	@Override
 	public String toString() {
