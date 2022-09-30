@@ -1,5 +1,7 @@
 package com.cab.services;
 
+
+
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,10 +23,14 @@ import com.cab.repository.CustomerRepository;
 import com.cab.repository.TripDetailsRepository;
 
 
+
+
+
 @Service
 public class TripBookingServiceImpl implements TripBookingServices {
 
-	@Autowired
+
+    @Autowired
 	private CustomerRepository customerDao;
 	
 	@Autowired
@@ -73,7 +79,7 @@ public class TripBookingServiceImpl implements TripBookingServices {
 		cus.getTripDetailsList().add(tripDetails);
 		tripDetails.setFromLocation(tripDto.getFromLocation());
 		tripDetails.setToLocation(tripDto.getToLocation());
-//         tripDetails.setDistance(tripDto.getDistance());
+
          
         
          int min = 10;
@@ -90,5 +96,9 @@ public class TripBookingServiceImpl implements TripBookingServices {
 		
 	}
 
+
+
+
+	
 
 }
