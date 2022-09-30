@@ -19,6 +19,7 @@ import com.cab.exceptions.CabDriverNotAvailableException;
 import com.cab.exceptions.TripInProgress;
 import com.cab.exceptions.UserDoesNotExist;
 import com.cab.repository.CabDriverRepository;
+import com.cab.repository.CustomerDAO;
 import com.cab.repository.CustomerRepository;
 import com.cab.repository.TripDetailsRepository;
 
@@ -31,7 +32,7 @@ public class TripBookingServiceImpl implements TripBookingServices {
 
 
     @Autowired
-	private CustomerRepository customerDao;
+	private CustomerDAO customerDao;
 	
 	@Autowired
 	private CabDriverRepository cabDriverDao;
@@ -94,6 +95,30 @@ public class TripBookingServiceImpl implements TripBookingServices {
 		
 		return new ResponseEntity<>(tripDetails,HttpStatus.ACCEPTED);
 		
+	}
+
+	@Override
+	public ResponseEntity<String> deleteBookedTrip(TripBookingDTO tripDto) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public ResponseEntity<List<TripBooking>> getAllTripsOfCustomer(TripBookingDTO tripDto) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public ResponseEntity<String> calculateBill(TripBookingDTO tripDto) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public ResponseEntity<BillDetails> generateBill(TripBookingDTO tripDto) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 
