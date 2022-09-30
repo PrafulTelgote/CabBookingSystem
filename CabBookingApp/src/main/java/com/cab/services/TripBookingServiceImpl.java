@@ -16,6 +16,7 @@ import com.cab.models.Customer;
 import com.cab.models.TripBooking;
 import com.cab.models.TripBookingDTO;
 import com.cab.exceptions.CabDriverNotAvailableException;
+import com.cab.exceptions.CustomerException;
 import com.cab.exceptions.TripInProgress;
 import com.cab.exceptions.UserDoesNotExist;
 import com.cab.repository.CabDriverRepository;
@@ -45,7 +46,7 @@ public class TripBookingServiceImpl implements TripBookingServices {
 	public ResponseEntity<TripBooking> insertTripDetails(TripBookingDTO tripDto) {
 		
 		Customer cus= customerDao.findByUsernameAndPassword(tripDto.getUsername(),tripDto.getPassword());
-		if(cus == null) throw new UserDoesNotExist("user name or password is wrong");
+		if(cus == null) throw new CustomerException("user name or password is wrong");
 		
 		List<TripBooking> tripDetailsList =  cus.getTripDetailsList();
 		

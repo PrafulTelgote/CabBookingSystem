@@ -40,65 +40,10 @@ public class Driver extends BasicDetails {
 	
 	private Boolean availablity = true;
 	
-	/*Getter Setter Methods Start*/
-
-	public Integer getDriverId() {
-		return driverId;
-	}
-
-	public void setDriverId(Integer driverId) {
-		this.driverId = driverId;
-	}
-
-	public Cab getCab() {
-		return cab;
-	}
-
-	public void setCab(Cab cab) {
-		this.cab = cab;
-	}
-
-	public List<TripBooking> getTripDetailsList() {
-		return tripDetailsList;
-	}
-
-	public void setTripDetailsList(List<TripBooking> tripDetailsList) {
-		this.tripDetailsList = tripDetailsList;
-	}
-
-	public String getLicenseNumber() {
-		return licenseNumber;
-	}
-
-	public void setLicenseNumber(String licenseNumber) {
-		this.licenseNumber = licenseNumber;
-	}
-
-	public Boolean getAvailablity() {
-		return availablity;
-	}
-
-	public void setAvailablity(Boolean availablity) {
-		this.availablity = availablity;
-	}
 	
-	/*Getter Setter Methods Ended*/
-	
-	
-	/*override method*/
-
 	@Override
 	public String toString() {
 		return "Driver [driverId=" + driverId + ", cab=" + cab + ", tripDetailsList=" + tripDetailsList
 				+ ", licenseNumber=" + licenseNumber + ", availablity=" + availablity + "]";
 	}
-	
-
-	
-	
-	
-	
-	
-	
-
 }
