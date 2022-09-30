@@ -15,7 +15,7 @@ public ResponseEntity<Driver> insertCabDriver(DriverCabDTO cabdto) throws UserNa
 	
 	public ResponseEntity<Driver> updateCabDriver(DriverCabDTO cabdtupdate,String user,String pass) throws UserNameAlreadyExist, UserDoesNotExist;
 	
-//	public ResponseEntity<String> deleteCabDriver(Driver cabDriver);
+//	public ResponseEntity<String> deleteCabDriver(Integer id);
 
 //	public ResponseEntity<Driver> viewDriverbyId(Integer id);
 	

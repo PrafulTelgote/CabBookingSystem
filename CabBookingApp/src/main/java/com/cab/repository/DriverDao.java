@@ -9,4 +9,14 @@ public interface DriverDao extends JpaRepository<Driver, Integer> {
 
 	Cab findByNumberPlate(String numberPlate);
 
+	Driver findByUsernameAndPassword(String user, String pass);
+
+	Driver findByUsername(String username);
+
+	static Driver findByLicenseNumber(String licenseNumber) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+
 }

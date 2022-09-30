@@ -9,6 +9,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @MappedSuperclass
+@Data
 public  class BasicDetails {
 	
 	@NotNull(message = "Please Provide a Username")
