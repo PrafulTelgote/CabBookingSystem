@@ -1,6 +1,6 @@
 package com.cab.models;
 
-public class DriverCabDTO {
+public class DriverCabDTO extends BasicDetails{
 	
 	
 private String licenseNumber;
@@ -82,6 +82,16 @@ private String licenseNumber;
 	}
 
 	public DriverCabDTO() {
+	}
+
+	public static Driver findByUsername(String username) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public static Driver findByLicenseNumber(String licenseNumber2) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 	
