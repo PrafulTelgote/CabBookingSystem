@@ -5,7 +5,7 @@
 
 ## Contributors
 
-- [@Mehul](https://github.com/Mehul1669)
+- [@Mehul](https://github.com/Mehul1699)
 - [@Praful Telgote](https://github.com/PrafulTelgote)
 - [@Dheeraj Singh](https://github.com/POPEYE-jpg)
 - [@Akshay Boraste](https://github.com/akbora1994)
