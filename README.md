@@ -28,6 +28,3 @@
 2. Swagger for API calls
 3. Zoom and GitHub for Presentation
 4. Slack and Zoom for Communication
-
-
-## Project Details:
