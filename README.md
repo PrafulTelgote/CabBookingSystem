@@ -1,6 +1,6 @@
 # Cab-Booking API
-- A basic Cab Booking Application developed in Java by a team of 5 Back-End Developers for Construct Week at Masai School.
-- Contains all the basic CRUD operations related to different entities involed in a Cab Booking App.
+- Created REST API for our Online Cab Booking Application which is our BackEnd project developed by a team of 5 developers in 5 days for our Construct Week at Masai School.
+- By this application user can book a trip, cancel a trip, view all trip details, update trip etc..
 
 
 
